@@ -1,0 +1,45 @@
+/* fontes */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/overpass/v7/qFda35WCmI96Ajtm83upeyoaX6QPnlo6fPPrOQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoC1CzTtw.ttf) format('truetype');
+}
+/* textos */
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Overpass', sans-serif;
+}
+/* componentes */
+header {
+  background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  border-bottom-left-radius: 100px;
+}
+header .menu {
+  padding: 25px;
+  padding-left: 10rem;
+  display: inline-flex;
+}
+header .title {
+  text-align: center;
+  color: white;
+  padding-bottom: 40px;
+}
+section {
+  padding: 10rem;
+}
+.section__intro h1 {
+  text-align: center;
+}
