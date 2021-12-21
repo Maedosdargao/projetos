@@ -28,6 +28,7 @@ header {
   border-bottom-left-radius: 100px;
 }
 header .menu {
+  color: white;
   padding: 25px;
   padding-left: 10rem;
   display: flex;
@@ -41,8 +42,14 @@ header .title {
   padding-bottom: 40px;
 }
 section {
-  padding: 10rem;
+  padding: 5rem;
 }
 .section__intro h1 {
   text-align: center;
+}
+.section__state {
+  background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  color: white;
 }
