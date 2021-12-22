@@ -7,11 +7,39 @@
   src: url(https://fonts.gstatic.com/s/overpass/v7/qFda35WCmI96Ajtm83upeyoaX6QPnlo6fPPrOQ.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/overpass/v7/qFda35WCmI96Ajtm83upeyoaX6QPnlo6ovPrOQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/overpass/v7/qFda35WCmI96Ajtm83upeyoaX6QPnlo6IvTrOQ.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoC1CzTtw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgo6eA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoCjC3Ttw.ttf) format('truetype');
 }
 /* textos */
 body {
@@ -39,7 +67,14 @@ header .menu {
 header .title {
   text-align: center;
   color: white;
+  font-size: x-large;
   padding-bottom: 40px;
+}
+header .title p {
+  font-size: medium;
+}
+header .title a {
+  font-size: medium;
 }
 section {
   padding: 5rem;
@@ -52,4 +87,22 @@ section {
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   color: white;
+}
+footer {
+  padding: 4rem;
+  padding-left: 10rem;
+  padding-right: 15rem;
+  background-color: hsl(240, 10%, 16%);
+  border-top-right-radius: 100px;
+  color: white;
+  font-family: 'overpass', sans-serif;
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .ul {
+  display: flex;
+  flex-direction: column;
 }
