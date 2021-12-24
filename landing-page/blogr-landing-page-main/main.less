@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;600&family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
 
+/* resets */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* textos */
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -49,8 +55,29 @@ section {
 }
 
 .section__intro {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+
     h1 {
         text-align: center;
+    }
+
+    .intro__container {
+        display: flex;
+        flex-direction: column;
+
+        .container--img {
+            order: 1;
+            max-width: 500px;
+
+            img {
+                width: 100%;
+            }
+        }
+        .container--text {
+            order: 2;
+            width: 50%;
+        }
     }
 }
 .section__state {

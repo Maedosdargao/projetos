@@ -41,6 +41,11 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoCjC3Ttw.ttf) format('truetype');
 }
+/* resets */
+body {
+  margin: 0;
+  padding: 0;
+}
 /* textos */
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -79,8 +84,27 @@ header .title a {
 section {
   padding: 5rem;
 }
+.section__intro {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
 .section__intro h1 {
   text-align: center;
+}
+.section__intro .intro__container {
+  display: flex;
+  flex-direction: column;
+}
+.section__intro .intro__container .container--img {
+  order: 1;
+  max-width: 500px;
+}
+.section__intro .intro__container .container--img img {
+  width: 100%;
+}
+.section__intro .intro__container .container--text {
+  order: 2;
+  width: 50%;
 }
 .section__state {
   background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
